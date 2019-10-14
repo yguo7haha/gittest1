@@ -1,0 +1,28 @@
+
+#ball{animation-name:myanimation;
+animation-duration: 3s;
+animation-delay:0.5s;
+position:relative;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite
+}
+
+
+
+@keyframes myanimation{
+0% {left:0px;top:0px; }
+
+25% {left:300px; top:300px;}
+
+50%{left:0px; top:300px}
+
+75%{left:0px; top:0px}
+
+}
+
+
+  #ball:hover {
+    transform: rotate(-60deg);
+    ;
+  }
+#ball{transition: transform 3s ease-in-out;}
